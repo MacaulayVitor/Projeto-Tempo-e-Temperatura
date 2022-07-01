@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display:flex;
+    justify-content: center;
+}
+.card{
+    margin-top: 50px;
+    background: linear-gradient(rgba(255, 81, 0, 0.815), rgba(255, 255, 255, 0.664));
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px 0px rgba(255, 255, 255, 0.329);
+}
+.card-header{
+    border-radius: 10px;
+    font-family: 'Courgette', cursive;
+    font-size: 2em;
+    justify-content: center;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+}
+.card-body{
+    width: 26rem;
+}
+.city{
+    font-size: 1.3em;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.date{
+    font-size: 1.3em;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.container-img{
+    display: flex;
+    justify-content: center;
+}
+img{
+    margin: 5px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.582);
+}
+.container-temp{
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.weather{
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+.low-high{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+input{
+    border-color: rgb(56, 139, 187);
+    border-radius: 10px;
+    width: 100%;
+}
+.input-class{
+    display: flex;
+    margin: 5px;
+}
+button{
+    grid-row: auto;
+    border-color: rgb(56, 139, 187);
+    color: rgb(24, 24, 24);
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all .4s ease-out;
+}
+button:hover{
+    background-color: rgb(56, 139, 187);
+    color:white;
+}
+@media(max-width:624px){
+    .card-body{
+        width: 19rem;
+    }
+    .card-header{
+        font-size: 1.6em;
+    }
+    .container-temp{
+        font-size: 2.8em;
+    }
+    .weather{
+        font-size: 1.7em;
+    }
+}
